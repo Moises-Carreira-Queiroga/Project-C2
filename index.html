@@ -1,11 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>C2</h1>
+      <form id="loginform">
+        <label>
+          <span>Identifiant/Email</span>
+          <input
+            required
+            autocomplete="username"
+            type="text"
+            placeholder="Entrer votre identifiant/email"
+            id="identifiant"
+          />
+        </label>
+        <label>
+          <span>Mot de passe</span>
+          <input
+            required
+            autocomplete="current-password"
+            type="password"
+            placeholder="Entrer votre mot de passe"
+            id="motdepasse"
+          />
+        </label>
+        <button type="submit">Se connecter</button>
+        <p id="errormessage"></p>
+      </form>
+    </div>
+  </body>
 </html>
