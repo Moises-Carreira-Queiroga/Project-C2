@@ -19,7 +19,8 @@ formulaire.addEventListener("submit", function (event) {
     });
 
     if (utilisateurTrouve) {
-        window.location.href = "acceuil.html";
+        window.location.href = "accueil.html";
+        return;
     } else {
         erreur.textContent = "Identifiant ou mot de passe incorrect";
     }
